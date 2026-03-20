@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter Two — Calculated Surrender</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+  <a class="nav-title" href="index.html">Calculated Surrender</a>
+  <ul class="nav-links">
+    <li><a href="foreword.html">Foreword</a></li>
+    <li><a href="toc.html">Contents</a></li>
+    <li><a href="preface.html">Preface</a></li>
+    <li><a href="part-one.html">Part I</a></li>
+    <li><a href="part-two.html">Part II</a></li>
+    <li><a href="part-three.html">Part III</a></li>
+    <li><a href="part-four.html">Part IV</a></li>
+    <li><a href="part-five.html">Part V</a></li>
+  </ul>
+</nav>
+
+<main class="page">
+
+  <div class="section-label">Part One &nbsp;·&nbsp; Chapter Two</div>
+  <h1 class="page-title">The Seduction of Efficiency</h1>
+  <div class="blue-rule"></div>
+
+  <p>I want to tell you about a word that has done enormous damage in my lifetime. The word is <em>efficient</em>.</p>
+
+  <p>Efficiency is not a bad thing. In the right context it's a wonderful thing. A more efficient engine wastes less fuel. A more efficient surgery takes less time and causes less trauma. A more efficient supply chain gets medicine to people who need it faster. I'm not against efficiency. I've spent my career trying to make systems more efficient. But efficiency is a measure, not a value. It tells you how well you're achieving a goal. It says nothing about whether the goal is worth achieving.</p>
+
+  <p>Somewhere in the last few decades, the technology industry forgot this distinction. Efficiency stopped being a measure of how well we were serving human ends, and became an end in itself. The question stopped being <em>efficient at what, and toward what purpose?</em> It became simply: is this more efficient than what we had before? If yes — ship it.</p>
+
+  <p>I watched this happen. I was part of communities where it happened. And I have to say, in the moment, it was genuinely hard to resist. Because the alternative — asking the deeper questions, slowing down, demanding that we think carefully about what we were optimizing for — felt like obstruction. Like being the person who raises their hand at the end of a meeting and says, wait, should we actually be doing this? Nobody wants to be that person. The product ships. The meeting ends. The world moves on.</p>
+
+  <div class="prose-divider">· · ·</div>
+
+  <p>Here is the thing that made efficiency so seductive in the context of algorithmic decision-making specifically: it came attached to a genuine moral argument.</p>
+
+  <p>Human decision-making at institutional scale is not pretty. I don't mean that as a criticism of individuals — I mean it as a finding, replicated so consistently across so many studies that it is simply a fact about how cognition works under pressure. A 2011 study followed Israeli parole boards through their daily sessions and tracked when favorable rulings were granted. The answer, in a rational system, should have had nothing to do with time of day. In the real system, it had everything to do with it. Right after a break — food, rest, a few minutes away from the caseload — the approval rate was around sixty-five percent. As the session wore on, it dropped steadily toward zero. Then break. Then sixty-five percent again.</p>
+
+  <p>The judges were not aware of this. They were experienced, serious professionals. They believed they were evaluating each case on its merits. And maybe they were, in the sense that they were trying to. But hunger and fatigue were in the room too, and they were tilting the scales in ways nobody could see or correct.</p>
+
+  <p>This is not an isolated finding. It shows up everywhere you look. Judges sentence more harshly on Mondays. Doctors order fewer pain investigations for Black patients describing the same symptoms as white patients. Loan officers extend better terms to people who look like them. Teachers grade the same essay higher when they think a boy wrote it. None of these people are villains. Most of them would be horrified to learn they were doing this. But they were doing it.</p>
+
+  <p>So when someone came along and said — what if we replaced this inconsistent, bias-prone, fatigue-affected human process with a system that applies the same rules to every case, every time, without exception — it wasn't a crazy idea. It was, on the surface, a moral idea. More fairness. Less arbitrariness. What's not to like?</p>
+
+  <p>That argument still has force. I want to be honest about that. But it has a trap built into it that I didn't fully understand when I first encountered it, and I think a lot of people still don't.</p>
+
+  <div class="prose-divider">· · ·</div>
+
+  <p>The trap works like this. You start with a real problem — human inconsistency in some high-stakes domain. You build a system that addresses that problem in a narrow, well-defined version of the domain, and it works. Fraud detection. Medical image analysis. Credit card transaction monitoring. The inputs are clear. The outputs are verifiable. The errors are detectable. The system is genuinely better than the human baseline in this specific context.</p>
+
+  <p>And then the system starts to expand.</p>
+
+  <p>Not because someone made a deliberate decision to expand it. Because it has momentum now. Vendors. Contracts. Careers built around it. The question shifts from <em>does this system work?</em> to <em>how do we make it work better?</em> The foundational question — <em>should this system be making these decisions at all?</em> — quietly stops being asked. And the system moves into domains where the original conditions no longer apply, where the inputs are contested and value-laden, where errors are hard to detect and even harder to correct, and where the costs of getting it wrong fall not on the institution but on the most vulnerable people the institution is supposed to be serving.</p>
+
+  <p>Let me give you a concrete example, because abstractions let us off the hook.</p>
+
+  <p>Imagine a child welfare agency. Overburdened social workers, impossible caseloads, genuine anguish about children who fall through the gaps. A vendor comes in with a predictive system. It will score families on their risk of abuse, drawing on administrative data — prior contact with social services, benefit claims, housing instability, parental mental health history. It will help workers focus their attention on the highest-risk cases. It will save children.</p>
+
+  <p>The pitch is compelling. The need is real.</p>
+
+  <p>Here is what the pitch doesn't mention. The variables the system uses as proxies for risk are all correlated with poverty. And poverty is correlated with race. Not because poor families or minority families abuse their children more — they don't — but because they have more contact with administrative systems. They show up in the data more. So the algorithm flags them more. And when workers follow up on those flags, they find things — because they're looking — and that confirms the score, which raises the flag, which triggers more investigation, in a loop that has very little to do with actual abuse risk and a lot to do with who was visible to the system in the first place.</p>
+
+  <p>This happened in the Netherlands, on a large scale. A government algorithm used to detect benefit fraud targeted ethnic minorities at dramatically higher rates. It triggered investigations. Those investigations destroyed families. A court eventually ruled it a violation of human rights. By then, the damage was done.</p>
+
+  <p>It happened in the United States. It happened in the United Kingdom. It is happening now, somewhere, in a procurement decision being made by someone who has been shown a slide deck with impressive accuracy metrics and no column in the cost-benefit analysis for human dignity.</p>
+
+  <div class="prose-divider">· · ·</div>
+
+  <p>There's a move I've seen made in these conversations so many times that I've started to recognize it the moment it begins. I call it the retreat to metrics. It goes like this: you raise the moral objections — the bias, the opacity, the erosion of accountability — and the response is to produce more numbers. Better accuracy figures. Larger sample sizes. Peer-reviewed validation studies. The moral question gets converted into a technical question, and the technical question gets answered with data, and suddenly the conversation is about methodology rather than whether any of this should be happening.</p>
+
+  <p>It's not dishonest, exactly. The numbers are real. The methodology is often sound. But it's a form of misdirection, whether intentional or not. The question of whether a system is accurate is not the same question as whether it should be making these decisions. And the question of whether it's more accurate than the human baseline is not the same as whether accuracy is the right measure of success in this domain.</p>
+
+  <p>In a criminal justice system, the relevant question is not just: does this produce better predictions? It's: what kind of proceeding is this, and what does it owe to the person standing in front of it? Those are different questions. The first one algorithms can answer. The second one they cannot.</p>
+
+  <div class="prose-divider">· · ·</div>
+
+  <p>But here's the piece that I think is most underappreciated, even now: the deepest appeal of these systems isn't efficiency at all. It's relief.</p>
+
+  <p>Being responsible for a hard decision is uncomfortable. Every judge who sentences a human being knows, on some level, that another judge might have decided differently. Every social worker who closes a case without investigation and later learns a child was harmed carries that. The possibility of being wrong — genuinely, consequentially wrong in a way that hurts someone — is the weight that accountability places on the people who exercise judgment. It's supposed to be there. That weight is what makes the judgment serious.</p>
+
+  <p>An algorithm offers a way out. When the system makes the call, the human who acts on it can tell herself — and tell everyone else — that she was following the evidence. Applying objective criteria. Not imposing her own values. The decision gets laundered through the machine and comes out the other side looking clean.</p>
+
+  <p>The moral weight doesn't disappear. But it becomes impossible to locate. It's distributed across the engineers who built the model, the executives who deployed it, the regulators who permitted it, the procurement officers who signed the contract, and the frontline workers who act on its outputs. Everybody did their job. Nobody made the decision. Nobody is responsible.</p>
+
+  <p>This is the accountability vacuum, and I want to be clear that it is not an accidental side effect of algorithmic governance. For a lot of the people involved, it is the feature. The efficiency argument is the pitch. The relief from responsibility is the sale.</p>
+
+  <div class="prose-divider">· · ·</div>
+
+  <p>There is one more thing I've watched happen that I want to name, because it's slower and subtler than anything I've described so far and in some ways more dangerous.</p>
+
+  <p>When you introduce an algorithm into a professional practice as a supplement to human judgment — a tool you can consult and override — it seems harmless. The professional still decides. The algorithm just offers a second opinion. Fine.</p>
+
+  <p>But over time something happens. The professionals who practiced before the algorithm retire. Their successors are trained in an environment where the algorithm was already there. They never developed the judgment that overriding it would require, because they never needed to. The tacit knowledge — the feel for what the data doesn't capture, the practiced intuition built up over thousands of cases — never forms, because the algorithm was always there to substitute for it.</p>
+
+  <p>A generation later, the idea of making these decisions without algorithmic guidance seems not just unusual but irresponsible. The human judgment the algorithm was supposed to supplement has quietly ceased to exist. What's left is the nominal authority to override a system that nobody any longer has the knowledge or the confidence to override.</p>
+
+  <p>I've seen this happen in software engineering, in financial analysis, in medical diagnosis. I expect I'll see it in many more domains before I'm done. The system doesn't replace human judgment all at once. It waits.</p>
+
+  <p>And then one day, the judgment it was supposed to supplement is gone, and nobody noticed it leaving, and we are left with the machine and the ghost of the human who used to stand behind it.</p>
+
+  <p>That's the final efficiency. And it's the one I find hardest to forgive.</p>
+
+  <nav class="page-nav">
+    <a href="chapter-01.html">← Chapter One</a>
+    <a class="toc-link" href="toc.html">Contents</a>
+    <a href="chapter-03.html">Chapter Three →</a>
+  </nav>
+
+</main>
+
+<footer>Calculated Surrender &nbsp;·&nbsp; 2026</footer>
+
+</body>
+</html>

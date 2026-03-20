@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculated Surrender</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+  body { overflow-x: hidden; }
+
+  #cover {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 2rem 5rem;
+    position: relative;
+  }
+
+  #cover::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 35%, rgba(122,179,200,0.05) 0%, transparent 65%);
+    pointer-events: none;
+  }
+
+  .cover-book {
+    width: min(400px, 86vw);
+    box-shadow:
+      0 0 0 1px rgba(122,179,200,0.07),
+      0 20px 60px rgba(0,0,0,0.85),
+      0 50px 120px rgba(0,0,0,0.5);
+    animation: coverRise 1.4s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  .cover-book img { width: 100%; display: block; }
+
+  @keyframes coverRise {
+    from { opacity: 0; transform: translateY(36px) scale(0.97); }
+    to   { opacity: 1; transform: translateY(0)   scale(1);    }
+  }
+
+  .cover-enter {
+    margin-top: 3rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 12px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    text-decoration: none;
+    border: 1px solid var(--border);
+    padding: 0.75rem 1.8rem;
+    transition: all 0.3s;
+    animation: coverRise 1.8s 0.4s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  .cover-enter:hover {
+    color: var(--blue);
+    border-color: var(--blue-dim);
+    background: rgba(122,179,200,0.04);
+  }
+
+  .cover-enter::after { content: '↓'; font-size: 14px; }
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-title" href="index.html">Calculated Surrender</a>
+  <ul class="nav-links">
+    <li><a href="foreword.html">Foreword</a></li>
+    <li><a href="toc.html">Contents</a></li>
+    <li><a href="preface.html">Preface</a></li>
+    <li><a href="part-one.html">Part I</a></li>
+    <li><a href="part-two.html">Part II</a></li>
+    <li><a href="part-three.html">Part III</a></li>
+    <li><a href="part-four.html">Part IV</a></li>
+    <li><a href="part-five.html">Part V</a></li>
+  </ul>
+</nav>
+
+<section id="cover">
+  <div class="cover-book">
+    <img src="images/cover.png" alt="Calculated Surrender — book cover">
+  </div>
+  <a href="foreword.html" class="cover-enter">Open Book</a>
+</section>
+
+<footer>Calculated Surrender &nbsp;·&nbsp; 2026</footer>
+
+</body>
+</html>
